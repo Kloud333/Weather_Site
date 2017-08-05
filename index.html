@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cloud Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper clearfix">
+        <!-- header area -->
+        <header class="header clearfix">
+            <p class="slogan"><img class="logo" src="img/logo.png" alt="">Weather</p>
+            <form class="weatherForm">
+                <input type="text" class="inputCityName" value="">
+                <input type="button" class="searchButton" value="Search">
+            </form>
+        </header>
+        <!-- contant area -->
+        <main class="contant clearfix">
+            <!-- Weater Information -->
+            <div class="weaterInformation">
+                <p class="cityName"></p>
+                <img class="weatherIcon" src="img" alt="">
+                <ul class="weatherParams">
+                    <li class="temp"></li>
+                    <li class="weather"></li>
+                    <li class="tempMinMax"></li>
+                </ul>
+            </div>
+            <!-- More Weater Information -->
+            <div class="moreWeaterInformation">
+                <ul class="moreWeatherParams">
+                    <li>
+                        <p class="title">Right Now</p>
+                    </li>
+                    <li>Description
+                        <p class="description"></p>
+                    </li>
+                    <li>Humidity
+                        <p class="humidity"></p>
+                    </li>
+                    <li>Pressure
+                        <p class="pressure"></p>
+                    </li>
+                    <li>Wind
+                        <p class="wind"></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Google map -->
+            <div class="map">
+                <p class="mapTitle">Radar</p>
+                <div id="map"></div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            © 2017 The Weather Company, Cloud Weather
+        </footer>
+
+        <!-- Scripts -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDjNz_K-GsGlp5eXsDiBTKu_7LDQGPZT6g&callback=initMap"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>

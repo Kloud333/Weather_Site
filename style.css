@@ -1,0 +1,206 @@
+@font-face {
+    font-family: Nexa-Light;
+    src: url(fonts/NexaLight.otf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: auto;
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: Nexa-Light;
+    color: white;
+    background-color: #ededed;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix:after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.wrapper {
+    padding: 10px;
+}
+
+
+/*-------- Header --------  */
+
+.header,
+.footer {
+    background-color: #232323;
+    padding: 10px;
+}
+
+.logo {
+    height: 25px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.slogan {
+    float: left;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.weatherForm {
+    padding-top: 5px;
+    float: right;
+}
+
+.weatherForm * {
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bolder;
+}
+
+.inputCityName {
+    width: 200px;
+    background-color: #c3c3c3;
+    color: #393939;
+    font-style: italic;
+}
+
+.searchButton {
+    background-color: #2a83d7;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*-------- Contant --------  */
+
+.contant {
+    margin: 20px 0;
+}
+
+.weaterInformation,
+.moreWeatherParams,
+.map {
+    box-shadow: 4px 4px 6px -2px rgba(0, 0, 0, 0.64);
+    border-radius: 5px;
+}
+
+
+/*-------- Weater Information --------  */
+
+.weaterInformation {
+    text-align: center;
+    float: left;
+    width: 30%;
+    height: 300px;
+    font-size: 30px;
+    background-color: #2a83d7;
+    padding: 10px;
+}
+
+.weatherParams {
+    text-align: left;
+    padding: 10px;
+}
+
+.cityName {
+    text-transform: uppercase;
+}
+
+.temp {
+    font-size: 60px;
+}
+
+.tempMinMax {
+    font-size: 20px;
+}
+
+
+/*-------- More Weater Information --------  */
+
+.moreWeaterInformation {
+    float: left;
+    padding: 0 10px;
+    width: 20%;
+}
+
+.moreWeatherParams {
+    background-color: #fff;
+    height: 300px;
+    padding: 10px;
+    color: black;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.moreWeatherParams li {
+    border-bottom: 1px solid #999999;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.moreWeatherParams li>p {
+    padding-top: 5px;
+    font-weight: normal;
+}
+
+.moreWeatherParams li:first-child,
+.moreWeatherParams li:last-child {
+    border-bottom: none;
+}
+
+
+/*-------- Google Map --------  */
+
+.map {
+    display: block;
+    height: 300px;
+    float: right;
+    width: 50%;
+}
+
+.mapTitle {
+    height: 40px;
+    background-color: #fff;
+    color: #333333;
+    padding: 10px;
+    font-size: 16px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#map {
+    height: 260px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/*-------- Footer --------  */
+
+.footer {
+    text-align: center;
+}
